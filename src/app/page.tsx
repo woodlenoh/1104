@@ -10,7 +10,7 @@ export default function Home() {
     {
       title: 'Portfolio Website',
       description: 'A personal portfolio website showcasing my projects and skills using Next.js and Tailwind CSS.',
-      link: 'https://your-portfolio-link.com',
+      link: 'https://nothing.com',
     },
     {
       title: 'E-commerce Store',
