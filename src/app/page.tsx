@@ -31,11 +31,11 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-      <header className="py-20 text-center">
-        <h1 className="text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-500">
+      <header className="py-20 text-center px-8">
+        <h1 className="mb-8 text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-500">
           woodlenoh
         </h1>
-        <div className="flex justify-center gap-8 mt-8">
+        <div className="flex justify-center gap-8">
           <Link href="https://woodlenoh.vercel.app" className="text-gray-400 hover:text-white transition transform hover:scale-105">
             <FaLink size={32} />
           </Link>
@@ -49,9 +49,9 @@ export default function Home() {
       </header>
 
       <section className="text-center px-8 py-20 bg-gray-800">
-        <h2 className="text-4xl font-bold mb-8 tracking-wide">About Me</h2>
+        <h2 className="text-4xl font-bold text-center mb-8 tracking-wide">About Me</h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          私はフロントエンドを中心に開発している学生です。Zennで記事を書いていますのでぜひ見てください。
+          I&apos;m a student focusing mainly on frontend development. I share my learnings and insights through articles on <Link href="https://zenn.dev/woodlenoh" target="_blank" rel="noopener noreferrer" className="hover:underline">Zenn</Link>, so feel free to check them out!
         </p>
       </section>
 
