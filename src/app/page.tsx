@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLink, FaTwitter } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 export default function Home() {
@@ -36,14 +36,14 @@ export default function Home() {
           woodlenoh
         </h1>
         <div className="flex justify-center gap-8 mt-8">
-          <Link href="https://github.com/woodlenoh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition transform hover:scale-125">
-            <FaGithub size={32} />
+          <Link href="https://woodlenoh.vercel.app" className="text-gray-400 hover:text-white transition transform hover:scale-105">
+            <FaLink size={32} />
           </Link>
-          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition transform hover:scale-125">
-            <FaLinkedin size={32} />
-          </Link>
-          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition transform hover:scale-125">
+          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition transform hover:scale-105">
             <FaTwitter size={32} />
+          </Link>
+          <Link href="https://github.com/woodlenoh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition transform hover:scale-105">
+            <FaGithub size={32} />
           </Link>
         </div>
       </header>
@@ -51,7 +51,7 @@ export default function Home() {
       <section className="text-center px-8 py-20 bg-gray-800">
         <h2 className="text-4xl font-bold mb-8 tracking-wide">About Me</h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          I&apos;m a passionate web developer with a knack for creating sleek, modern websites and applications. I specialize in front-end development, focusing on performance, accessibility, and best practices.
+          私はフロントエンドを中心に開発している学生です。Zennで記事を書いていますのでぜひ見てください。
         </p>
       </section>
 
