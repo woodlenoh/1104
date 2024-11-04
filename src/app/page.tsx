@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaGithub, FaLink, FaTwitter } from 'react-icons/fa';
+import { FiArrowRight } from 'react-icons/fi';
 import { MdEmail } from 'react-icons/md';
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-      <header className="py-20 text-center px-8">
+      <header className="py-20 text-center">
         <h1 className="mb-8 text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-500">
           woodlenoh
         </h1>
@@ -48,11 +49,12 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="text-center px-8 py-20 bg-gray-800">
+      <section className="text-center px-8 py-20 bg-gray-800 flex flex-col items-center">
         <h2 className="text-4xl font-bold text-center mb-8 tracking-wide">About Me</h2>
-        <p className="text-gray-400 max-w-2xl mx-auto">
+        <p className="text-gray-400 max-w-2xl mx-auto mb-4">
           I&apos;m a student focusing mainly on frontend development. I share my learnings and insights through articles on <Link href="https://zenn.dev/woodlenoh" target="_blank" rel="noopener noreferrer" className="hover:underline">Zenn</Link>, so feel free to check them out!
         </p>
+        <Link href="/about" className="flex items-center hover:underline">Read more <FiArrowRight className="ml-2" /></Link>
       </section>
 
       <section className="px-8 py-20">
@@ -60,7 +62,7 @@ export default function Home() {
         <div className="flex justify-center">
           <div className="flex flex-wrap gap-6">
             {skills.map((skill) => (
-              <span key={skill} className="font-mono bg-gradient-to-r from-purple-500 to-indigo-500 px-6 py-3 rounded-full text-white font-medium shadow-lg transform transition hover:scale-105">
+              <span key={skill} className="bg-gradient-to-r from-purple-500 to-indigo-500 px-6 py-3 rounded-full text-white shadow-lg transform transition hover:scale-105">
                 {skill}
               </span>
             ))}
@@ -86,7 +88,7 @@ export default function Home() {
       <section className="px-8 py-20 text-center">
         <h2 className="text-4xl font-bold mb-4 tracking-wide">Get In Touch</h2>
         <p className="text-gray-400 mb-8">Feel free to reach out for collaborations or just a friendly chat!</p>
-        <a href="mailto:email@example.com" className="inline-flex items-center gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 transition hover:scale-105">
+        <a href="mailto:email@example.com" className="inline-flex items-center gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 transition hover:scale-105">
           <MdEmail size={32} className="text-gray-400" />
           <span>email@example.com</span>
         </a>
